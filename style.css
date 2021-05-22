@@ -1,106 +1,53 @@
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --dark1: #000000;
+  --dark2: #3e432e;
+  --dark3: #616f39;
+  --light1: #a7d129;
 }
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
-
-/* GLOBAL STYLES
-    --------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
+  overflow-x: hidden;
 }
-
-/* CUSTOMIZE THE CAROUSEL
-    -------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
+.sec {
+  height: 100vh;
 }
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
+/* LANDING PAGE*/
+.landing {
+  background-color: var(--dark1);
+  color: var(--light1);
 }
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
+.bar {
+  position: relative;
+  color: var(--dark3);
+  padding: 6vh;
 }
-
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
+.big {
+  font-size: 1.8rem;
 }
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
+.small {
+  font-size: 1.2rem;
 }
-
-.marketing h2 {
-  font-weight: 400;
+.ac:hover,
+.active {
+  color: var(--light1);
 }
-
-.marketing .col-lg-4 p {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
+a {
+  color: var(--dark3);
 }
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 5rem 0;
-  /* Space out the Bootstrap <hr> more */
+.dij {
+  font-size: 6rem;
 }
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -0.05rem;
+.algo {
+  font-size: 2.2rem;
 }
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
+.ilus {
+  height: auto;
+  width: 48vw;
 }
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
+/* LANDING PAGE */
