@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
 }
 .sec {
-  height: 100vh;
+  min-height: 100vh;
 }
 /* LANDING PAGE*/
 .landing {
