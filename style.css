@@ -39,6 +39,7 @@ body {
   padding: 15px;
   border-radius: 10px;
   font-size: 20px;
+  opacity: 0.7;
 }
 
 #myBtn:hover {
@@ -69,3 +70,200 @@ a {
   color: var(--dark3);
 }
 /* LANDING PAGE */
+/*DEMONSTRATION*/
+.main {
+  background-color: var(--light1);
+  color: var(--dark1);
+}
+body,
+html,
+div,
+svg {
+  margin: 0;
+  padding: 0;
+}
+
+#Wrap {
+  position: fixed;
+  height: 0%;
+  width: 100%;
+  user-select: none;
+}
+
+.itemwrap {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  left: 100px;
+  top: 100px;
+}
+
+.item {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  border: 1px solid #333;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+.lineWrap {
+  position: fixed;
+  left: 0;
+  overflow: visible;
+}
+
+div.test {
+  width: 50px;
+  height: 50px;
+  background: #49b1f5;
+  border-radius: 50%;
+  border: 5px solid #34aaf1;
+  position: fixed;
+  z-index: 9999999;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  /*float: left;*/
+}
+
+#lineWrap {
+  position: fixed;
+  overflow: visible;
+}
+
+.slide {
+  position: fixed;
+  top: 20px;
+  right: 5px;
+  height: 90%;
+  padding-left: 5px;
+  width: 22%;
+  border: 3px solid #49b1f5;
+  border-radius: 4px;
+  overflow: auto;
+}
+
+.slide_title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #125;
+  background-color: #eeb;
+  border-radius: 5px;
+}
+
+.slide_content {
+  font-size: 15px;
+  color: #678945;
+}
+
+.slider_line {
+  position: unset;
+}
+
+.int {
+  height: 26px;
+  width: 60px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid #3989c5;
+}
+
+.control {
+  position: fixed;
+  margin-top: 10px;
+  left: 0px;
+  top: 0px;
+  width: 80%;
+  z-index: 999999999;
+  text-align: center;
+}
+
+.refer {
+  height: 30px;
+  background: #49b1f5;
+  border-radius: 3px;
+  border: 1px solid #3989c5;
+}
+
+.int_num {
+  font-size: 22px;
+  color: #232323;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background: #eee;
+  text-align: center;
+}
+
+.changdiv {
+  width: 400px;
+  height: 250px;
+  top: 200px;
+  left: 30%;
+  border: 4px solid #49b1f5;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  background: #fef;
+  display: none;
+  z-index: 99999999;
+}
+
+.tochange {
+  margin: auto;
+  width: 90px;
+  height: 30px;
+  border: 3px solid #49b1f5;
+}
+/**
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+**/
+/* 未访问链接
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+*/
+/* Visited link 
+a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+*/
+/* Move the mouse to the link 
+a:active {
+  color: #000;
+}*/
+/*MADE BY PAGE*/
+.makers {
+  background-color: var(--dark1);
+}
+.made-by {
+  color: var(--light1);
+}
+div.polaroid {
+  width: 70%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 var(--light1), 0 6px 20px 0 var(--dark3);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+.to,
+.name {
+  color: var(--dark3);
+}
+.name:hover {
+  color: var(--light1);
+}
