@@ -54,7 +54,7 @@ body {
 .bar {
   position: relative;
   color: var(--dark3);
-  padding-top: 6vh;
+  padding-top: 4vh;
 }
 .big {
   font-size: 1.8rem;
