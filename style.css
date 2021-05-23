@@ -76,33 +76,34 @@ a {
   color: var(--dark1);
 }
 .head {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--light1);
+}
+.head1 {
+  font-size: 1.7rem;
 }
 .in,
 .but {
   background-color: var(--dark1);
   color: var(--dark3);
   border: 0px;
-  border-radius: 5px;
-  margin: 5px;
-  text-align: center;
-  padding: 5px;
   width: 100%;
-  font-size: 1rem;
+  border-radius: 5px;
+  padding: 4px 10px;
+  text-align: center;
 }
 .but {
+  color: var(--dark1);
   background-color: var(--light1);
 }
-/*
+
 #Wrap {
-  position: fixed;
   height: 0%;
   width: 100%;
   user-select: none;
 }
 
 .itemwrap {
-  position: fixed;
   width: 50%;
   height: 50%;
   left: 100px;
@@ -132,17 +133,15 @@ div.test {
   background: #49b1f5;
   border-radius: 50%;
   border: 5px solid #34aaf1;
-  position: fixed;
   z-index: 9999999;
   font-size: 30px;
   color: #fff;
   text-align: center;
   font-weight: 600;
 }
-  /*float: left;*/
-/*
+/*float: left;*/
+
 #lineWrap {
-  position: fixed;
   overflow: visible;
 }
 
@@ -203,7 +202,6 @@ div.test {
   border-radius: 5px;
   text-align: center;
   padding: 20px;
-  position: fixed;
   background: #fef;
   display: none;
   z-index: 99999999;
@@ -214,7 +212,7 @@ div.test {
   width: 90px;
   height: 30px;
   border: 3px solid #49b1f5;
-}*/
+}
 /**
 a:link {
   color: #000000;
