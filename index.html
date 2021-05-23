@@ -23,6 +23,7 @@
 
     <body>
         <button onclick="topFunction()" id="myBtn" title="Go to top">Home</button>
+        <!--*******************************LANDING SECTION********************************************-->
         <section class="sec landing text-center" id="sec1">
             <div class="container-md">
                 <div class="row">
@@ -62,33 +63,50 @@
                 </div>
             </div>
         </section>
+        <!--*******************************DEMONSTRATION SECTION********************************************-->
         <section class="sec main" id="sec2">
-            <!--<div class="container text-center">
+            <div class="container text-center mx-0">
                 <div class="row">
-                    <div class="col-2">
+                    <!--BUTTONS-->
+                    <div class="col-lg-2">
                         <div class="row">
-                            <input type="input" name="" id="input_num" value="6" class="int">
-                            <input type="button" name="" value="Generate node" class="refer" onclick="input()">
+                            <span class="head mx-auto">No of Nodes</span>
+                            <div class="col-lg-3">
+                                <input type="input" name="" id="input_num" value="6" class="in">
+                            </div>
+                            <div class="col-lg-9">
+                                <input type="button" name="" value="Generate node" class="but" onclick="input()">
+                            </div>
                         </div>
                         <div class="row">
-                            <input type="input" name="" id="first" value="v0" class="int">
-                            <input type="input" name="" id="second" value="v1" class="int">
-                            <input type="input" name="" id="weight" value="0" class="int">
+                            <div class="col-md-4">
+                                <input type="input" name="" id="first" value="v0" class="in">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="input" name="" id="second" value="v1" class="in">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="input" name="" id="weight" value="0" class="in">
+                            </div>
                         </div>
                         <div class="row">
-                            <input type="button" name="" value="Add edge" class="refer" onclick="input()">
-                            <input type="button" name="" value="Remove edge" class="refer" onclick="input()">
-                            <input type="button" name="" value="Clear connection" class="refer" onclick="cleanline()">
+                            <div class="col-md-6"><input type="button" name="" value="Add" class="but"
+                                    onclick="input()"></div>
+                            <div class="col-md-6"><input type="button" name="" value="Remove" class="but"
+                                    onclick="input()"></div>
+                            <input type="button" name="" value="Clear all connections" class="but"
+                                onclick="cleanline()">
                         </div>
                         <div class="row">
-                            <input type="input" name="" id="begin" value="v0" class="int">
-                            <input type="button" name="" value="Start" class="refer" onclick="createPath()">
-                            <input type="button" name="" value="Clear page" class="refer" onclick="cleanele()">
+                            <input type="input" name="" id="begin" value="v0" class="in">
+                            <input type="button" name="" value="Start" class="but" onclick="createPath()">
+                            <input type="button" name="" value="Clear page" class="but" onclick="cleanele()">
                         </div>
                     </div>
-                    <div class="col">
-                    </div>
-                    <div class="col-2">
+                    <!--NODES-->
+                    <div class="col-lg-8">
+                        <!--<div id="Wrap"></div>
+                        <div id="divele"></div>
                         <div class="changdiv" id="changdiv">
                             Enter the weight and press OK to change<br>
                             <input type="input" name="" id="cnum"><br>
@@ -99,8 +117,12 @@
                                 onclick="deleteline()">
                                 Delete the link
                             </div>
-                        </div>
-                        <div class="slide" id="slider">
+                        </div>-->
+                    </div>
+                    <!--CONTENT-->
+                    <div class="col-lg-2">
+                    </div>
+                    <!--<div class="slide" id="slider">
                             <h1>Operation instructions</h1>
                             <strong>Generate node</strong>
                             <p>Enter the number of nodes and click Generate Node</p>
@@ -114,13 +136,11 @@
                             <p>Enter the starting node and click Generate to start dynamic demonstration of path search
                             </p>
                             <strong>Algorithm explanation</strong>
-                        </div>
-                    </div>
+                        </div>-->
                 </div>
-                <div id="Wrap"></div>
-                <div id="divele"></div>
-                -->
+            </div>
         </section>
+        <!--*******************************CREDITS SECTION********************************************-->
         <section class="sec makers" id="sec3">
             <div class="container text-center">
                 <div class="row">

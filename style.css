@@ -72,17 +72,28 @@ a {
 /* LANDING PAGE */
 /*DEMONSTRATION*/
 .main {
-  background-color: var(--light1);
+  background-color: var(--dark3);
   color: var(--dark1);
 }
-body,
-html,
-div,
-svg {
-  margin: 0;
-  padding: 0;
+.head {
+  font-size: 1.5rem;
 }
-
+.in,
+.but {
+  background-color: var(--dark1);
+  color: var(--dark3);
+  border: 0px;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  font-size: 1rem;
+}
+.but {
+  background-color: var(--light1);
+}
+/*
 #Wrap {
   position: fixed;
   height: 0%;
@@ -127,9 +138,9 @@ div.test {
   color: #fff;
   text-align: center;
   font-weight: 600;
-  /*float: left;*/
 }
-
+  /*float: left;*/
+/*
 #lineWrap {
   position: fixed;
   overflow: visible;
@@ -164,14 +175,6 @@ div.test {
   position: unset;
 }
 
-.int {
-  height: 26px;
-  width: 60px;
-  text-align: center;
-  border-radius: 3px;
-  border: 1px solid #3989c5;
-}
-
 .control {
   position: fixed;
   margin-top: 10px;
@@ -181,14 +184,6 @@ div.test {
   z-index: 999999999;
   text-align: center;
 }
-
-.refer {
-  height: 30px;
-  background: #49b1f5;
-  border-radius: 3px;
-  border: 1px solid #3989c5;
-}
-
 .int_num {
   font-size: 22px;
   color: #232323;
@@ -219,14 +214,14 @@ div.test {
   width: 90px;
   height: 30px;
   border: 3px solid #49b1f5;
-}
+}*/
 /**
 a:link {
   color: #000000;
   text-decoration: none;
 }
 **/
-/* 未访问链接
+/* Link not visited
 a:visited {
   color: #000;
   text-decoration: none;
@@ -260,10 +255,9 @@ div.container {
   text-align: center;
   padding: 10px 20px;
 }
-.to,
-.name {
+.to {
   color: var(--dark3);
 }
-.name:hover {
+.name {
   color: var(--light1);
 }
