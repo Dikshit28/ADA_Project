@@ -71,6 +71,9 @@ a {
 }
 /* LANDING PAGE */
 /*DEMONSTRATION*/
+.sec1 {
+  min-height: 100vh;
+}
 .main {
   background-color: var(--dark3);
   color: var(--dark1);
@@ -96,7 +99,7 @@ a {
   color: var(--dark1);
   background-color: var(--light1);
 }
-
+/*NODES*/
 #Wrap {
   height: 0%;
   width: 100%;
@@ -144,14 +147,8 @@ div.test {
 #lineWrap {
   overflow: visible;
 }
-
+/*CONTENT*/
 .slide {
-  position: fixed;
-  top: 20px;
-  right: 5px;
-  height: 90%;
-  padding-left: 5px;
-  width: 22%;
   border: 3px solid #49b1f5;
   border-radius: 4px;
   overflow: auto;
@@ -213,28 +210,27 @@ div.test {
   height: 30px;
   border: 3px solid #49b1f5;
 }
-/**
-a:link {
+
+.nodes > a:link {
   color: #000000;
   text-decoration: none;
 }
-**/
-/* Link not visited
-a:visited {
+
+/* Link not visited*/
+.nodes > a:visited {
   color: #000;
   text-decoration: none;
 }
-*/
-/* Visited link 
-a:hover {
+/* Visited link */
+.nodes > a:hover {
   color: #000;
   text-decoration: underline;
 }
-*/
-/* Move the mouse to the link 
-a:active {
+
+/* Move the mouse to the link */
+.nodes > a:active {
   color: #000;
-}*/
+}
 /*MADE BY PAGE*/
 .makers {
   background-color: var(--dark1);

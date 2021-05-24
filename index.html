@@ -71,8 +71,8 @@
         </section>
         <!--*******************************DEMONSTRATION SECTION********************************************-->
         <section class="sec main" id="sec2">
-            <div class="container-fluid text-center">
-                <div class="row">
+            <div class="container-fluid sec1 text-center">
+                <div class="row sec1">
                     <!--BUTTONS-->
                     <div class="col-lg-3 my-auto">
                         <span class="head1">READY</span>
@@ -109,7 +109,7 @@
                                 <input type="button" name="" value="Add" class="but" onclick="input()">
                             </div>
                             <div class="col">
-                                <input type="button" name="" value="Remove" class="but" onclick="input()">
+                                <input type="button" name="" value="Remove" class="but" onclick="deleteline()">
                             </div>
                         </div>
                         <div class="row pt-1">
@@ -135,24 +135,13 @@
                         </div>
                     </div>
                     <!--NODES-->
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 nodes">
                         <div id="Wrap"></div>
                         <div id="divele"></div>
-                        <!--<div class="changdiv" id="changdiv">
-                            Enter the weight and press OK to change<br>
-                            <input type="input" name="" id="cnum"><br>
-                            <br>
-                            <div class="tochange" type="button" id="quxiao" onclick="quxiao()">cancel</div><br>
-                            <div class="tochange" type="button" id="onchange" onclick="ok()">change</div><br>
-                            <div class="tochange" type="button" style="background: rgb(190, 240, 81)" id="delete"
-                                onclick="deleteline()">
-                                Delete the link
-                            </div>
-                        </div>-->
                     </div>
                     <!--CONTENT-->
                     <div class="col-lg-3 my-auto">
-                        <div class="slide" id="slider">
+                        <div class="slide px-2 py-2" id="slider">
                             <h1>Operation instructions</h1>
                             <strong>Generate node</strong>
                             <p>Enter the number of nodes and click Generate Node</p>
