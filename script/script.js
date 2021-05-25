@@ -160,28 +160,6 @@ function init(g) {
 //Create a global map first
 mgraph = new Mgraph();
 var content = "";
-
-//  Get X coordinate
-function getElementLeft(element) {
-    var actualLeft = element.offsetLeft;
-    var current = element.offsetParent;
-    while (current !== null) {
-        actualLeft += current.offsetLeft;
-        current = current.offsetParent;
-    }
-    return actualLeft;
-}
-
-//Get the y-axis coordinates
-function getElementTop(element) {
-    var actualTop = element.offsetTop;
-    var current = element.offsetParent;
-    while (current !== null) {
-        actualTop += current.offsetTop;
-        current = current.offsetParent;
-    }
-    return actualTop;
-}
 //Node rendering
 function input() {
     if (mgraph.vexnum == 0) {
