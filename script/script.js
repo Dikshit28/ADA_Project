@@ -56,8 +56,10 @@ function getVex(G, x) {
 function Dijkstra(g, x) {
     cleancolor();
     console.log(g);
+    console.log(x);
     var vexnum = g.vexnum;
     var vex = getVex(g, x);
+    console.log(vex);
     if (vex == -1) return;
     var dist = new Array();
     var path = new Array();
@@ -66,7 +68,7 @@ function Dijkstra(g, x) {
         dist[i] = g.edge[vex][i];
         if (g.edge[vex][i] != gigantic) path[i] = vex;
     }
-    console.log(dist);
+    console.log(dist, path);
     var S = new Array();
     S[vex] = true;
     var dd;
