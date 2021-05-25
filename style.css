@@ -5,7 +5,11 @@
   --dark3: #616f39;
   --light1: #a7d129;
 }
-* {
+*,
+html,
+body,
+div,
+svg {
   font-family: "Poppins", sans-serif;
   margin: 0%;
   padding: 0%;
@@ -100,37 +104,29 @@ a {
   background-color: var(--light1);
 }
 /*NODES*/
+.nodes {
+  position: relative;
+}
+.divele {
+  position: absolute;
+}
 #Wrap {
+  position: absolute;
   height: 0%;
   width: 100%;
   user-select: none;
 }
 
-.itemwrap {
-  width: 50%;
-  height: 50%;
-  left: 100px;
-  top: 100px;
-}
-
-.item {
-  position: absolute;
-  left: 100px;
-  top: 100px;
-  border: 1px solid #333;
-  height: 50px;
-  line-height: 50px;
-  width: 50px;
-  text-align: center;
-}
-
 .lineWrap {
-  position: fixed;
+  position: absolute;
   left: 0;
   overflow: visible;
 }
 
 div.test {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 50px;
   height: 50px;
   background: #49b1f5;
@@ -141,10 +137,11 @@ div.test {
   color: #fff;
   text-align: center;
   font-weight: 600;
+  /*float: left;*/
 }
-/*float: left;*/
 
 #lineWrap {
+  position: fixed;
   overflow: visible;
 }
 /*CONTENT*/
@@ -189,28 +186,6 @@ div.test {
   background: #eee;
   text-align: center;
 }
-
-.changdiv {
-  width: 400px;
-  height: 250px;
-  top: 200px;
-  left: 30%;
-  border: 4px solid #49b1f5;
-  border-radius: 5px;
-  text-align: center;
-  padding: 20px;
-  background: #fef;
-  display: none;
-  z-index: 99999999;
-}
-
-.tochange {
-  margin: auto;
-  width: 90px;
-  height: 30px;
-  border: 3px solid #49b1f5;
-}
-
 .nodes > a:link {
   color: #000000;
   text-decoration: none;

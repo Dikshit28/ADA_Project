@@ -87,15 +87,15 @@ function Dijkstra(g, x) {
             break;
           }
         }
-        var str = "node" + g.vex[dvex] + "unachievable<br><br>";
+        var str = "node " + g.vex[dvex] + "unachievable<br><br>";
 
         descripe.innerHTML =
           descripe.innerHTML +
-          "<div class=slider_line><div class=slide_title>clause" +
+          "<div class=slider_line><div class=slide_title>clause " +
           index +
-          "time</div><div class=slide_content>" +
+          "time </div><div class=slide_content>" +
           str +
-          "</div></div>";
+          "</div> </div>";
         document.body.appendChild(descripe);
         index++;
         S[dvex] = true;
@@ -105,7 +105,7 @@ function Dijkstra(g, x) {
         var colo = "#" + (Math.round(Math.random() * 800) + 100);
         element.style.background = colo;
         var str =
-          x + "arrive" + g.vex[dvex] + "The shortest path：" + g.vex[now];
+          x + " arrive " + g.vex[dvex] + "The shortest path：" + g.vex[now];
         while (now != vex) {
           var line1 = document.getElementById(g.vex[now] + g.vex[path[now]]);
           if (line1 == null)
@@ -115,14 +115,14 @@ function Dijkstra(g, x) {
           now = path[now];
           str = str + "<--" + g.vex[now];
         }
-        str = str + "<br>Total distance:" + dist[dvex] + "<br><br>";
+        str = str + "<br> Total distance: " + dist[dvex] + "<br><br>";
         descripe.innerHTML =
           descripe.innerHTML +
           "<div class=slider_line><div class=slide_title>clause" +
           index +
-          "time</div><div class=slide_content>" +
+          " time </div><div class=slide_content>" +
           str +
-          "</div></div>";
+          "</div> </div>";
         document.body.appendChild(descripe);
         index++;
         S[dvex] = true;
@@ -362,13 +362,7 @@ function deleteline() {
   ch.style.display = "none";
 }
 
-//Cancel modification weight
-function quxiao() {
-  var ch = document.getElementById("changdiv");
-  ch.style.display = "none";
-  gx = "";
-  gy = "";
-}
+
 
 //Empty the link
 function cleanline() {
@@ -403,7 +397,13 @@ function cleancolor() {
     linele[i].style.stroke = "#ddd";
   }
 }
-
+/*DROPPED//Cancel modification weight
+function quxiao() {
+  var ch = document.getElementById("changdiv");
+  ch.style.display = "none";
+  gx = "";
+  gy = "";
+}
 //Randomly generate a graph
 function randomCreate(num) {
   cleanele();
@@ -445,3 +445,4 @@ window.onload = function () {
   randomCreate(2);
   descripe.innerHTML = content;
 };
+*/
