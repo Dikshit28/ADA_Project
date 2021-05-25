@@ -70,6 +70,7 @@ function Dijkstra(g, x) {
     }
     console.log(dist, path);
     var S = new Array();
+    console.log(vex);
     S[vex] = true;
     console.log(S);
     var dd;
@@ -114,7 +115,7 @@ function Dijkstra(g, x) {
                     var line1 = document.getElementById(g.vex[now] + g.vex[path[now]]);
                     if (line1 == null)
                         line1 = document.getElementById(g.vex[path[now]] + g.vex[now]);
-                    //console.log(line1);
+                    console.log(line1);
                     line1.style.stroke = colo;
                     now = path[now];
                     str = str + "<--" + g.vex[now];
