@@ -4,6 +4,7 @@
   --dark2: #3e432e;
   --dark3: #616f39;
   --light1: #a7d129;
+  --blue: #6577b3;
 }
 *,
 html,
@@ -79,7 +80,7 @@ a {
   min-height: 100vh;
 }
 .main {
-  background-color: var(--dark3);
+  background-color: var(--blue);
   color: var(--dark1);
 }
 .head {

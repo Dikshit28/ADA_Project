@@ -71,6 +71,7 @@ function Dijkstra(g, x) {
     console.log(dist, path);
     var S = new Array();
     S[vex] = true;
+    console.log(S);
     var dd;
     var dvex = 0;
     var j = 0;
