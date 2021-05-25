@@ -183,7 +183,7 @@ function getElementTop(element) {
 function input() {
     if (mgraph.vexnum == 0) {
         var oinput = document.getElementById("input_num");
-        var num = oinput.value;
+        var num = Number(oinput.value);
         mgraph.vexnum = num;
         init(mgraph);
         //initialization
