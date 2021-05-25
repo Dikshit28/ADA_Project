@@ -95,7 +95,7 @@ function Dijkstra(g, x) {
 
                 descripe.innerHTML =
                     descripe.innerHTML +
-                    `<div class=slider_line><div class=slide_title>clause ${index} time
+                    `<div class=slider_line><div class=slide_title>Step ${index} 
                     </div><div class=slide_content> ${str} </div> </div>`;
                 document.getElementsByClassName("content")[0].appendChild(descripe);
                 index++;
