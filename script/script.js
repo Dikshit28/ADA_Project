@@ -90,16 +90,13 @@ function Dijkstra(g, x) {
                         break;
                     }
                 }
-                var str = "node " + g.vex[dvex] + " unachievable<br><br>";
+                var str = `node ${g.vex[dvex]} unachievable<br><br>`;
 
                 descripe.innerHTML =
                     descripe.innerHTML +
-                    "<div class=slider_line><div class=slide_title>clause " +
-                    index +
-                    " time </div><div class=slide_content>" +
-                    str +
-                    " </div> </div>";
-                document.body.appendChild(descripe);
+                    `<div class=slider_line><div class=slide_title>clause ${index} time
+                    </div><div class=slide_content> ${str} </div> </div>`;
+                document.getElementsByClassName("content").appendChild(descripe);
                 index++;
                 S[dvex] = true;
             } else {
@@ -108,7 +105,7 @@ function Dijkstra(g, x) {
                 var colo = "#" + (Math.round(Math.random() * 800) + 100);
                 element.style.background = colo;
                 var str =
-                    x + " arrive " + g.vex[dvex] + " The shortest path：" + g.vex[now];
+                    x + " arrive " + g.vex[dvex] + "The shortest path：" + g.vex[now];
                 while (now != vex) {
                     var line1 = document.getElementById(g.vex[now] + g.vex[path[now]]);
                     if (line1 == null)
@@ -118,15 +115,15 @@ function Dijkstra(g, x) {
                     now = path[now];
                     str = str + "<--" + g.vex[now];
                 }
-                str = str + "<br> Total distance: " + dist[dvex] + " <br><br>";
+                str = str + "<br> Total distance: " + dist[dvex] + "<br><br>";
                 descripe.innerHTML =
                     descripe.innerHTML +
-                    "<div class=slider_line><div class=slide_title> clause" +
+                    "<div class=slider_line><div class=slide_title>clause" +
                     index +
                     " time </div><div class=slide_content>" +
                     str +
-                    " </div> </div>";
-                document.body.appendChild(descripe);
+                    "</div> </div>";
+                document.getElementsByClassName("content").appendChild(descripe);
                 index++;
                 S[dvex] = true;
                 for (var k = 0; k < vexnum; ++k) {

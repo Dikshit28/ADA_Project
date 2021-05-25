@@ -154,14 +154,14 @@ div.test {
 .slide_title {
   font-size: 20px;
   font-weight: 600;
-  color: #125;
-  background-color: #eeb;
+  color: var(--dark1);
+  background-color: var(--light1);
   border-radius: 5px;
 }
 
 .slide_content {
   font-size: 15px;
-  color: #678945;
+  color: var(--dark1);
 }
 
 .slider_line {
