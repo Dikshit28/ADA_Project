@@ -55,6 +55,7 @@ function getVex(G, x) {
 //Single source shortest path algorithm
 function Dijkstra(g, x) {
     cleancolor();
+    console.log(g);
     var vexnum = g.vexnum;
     var vex = getVex(g, x);
     if (vex == -1) return;
@@ -96,7 +97,7 @@ function Dijkstra(g, x) {
                     descripe.innerHTML +
                     `<div class=slider_line><div class=slide_title>clause ${index} time
                     </div><div class=slide_content> ${str} </div> </div>`;
-                document.getElementsByClassName("content").appendChild(descripe);
+                document.getElementsByClassName("content")[0].appendChild(descripe);
                 index++;
                 S[dvex] = true;
             } else {
@@ -123,14 +124,14 @@ function Dijkstra(g, x) {
                     " time </div><div class=slide_content>" +
                     str +
                     "</div> </div>";
-                document.getElementsByClassName("content").appendChild(descripe);
+                document.getElementsByClassName("content")[0].appendChild(descripe);
                 index++;
                 S[dvex] = true;
                 for (var k = 0; k < vexnum; ++k) {
                     if (!S[k]) {
-                        if (dist[dvex] + g.edge[dvex][k] < dist[k]) {
-                            dist[k] = dist[dvex] + g.edge[dvex][k];
-                            path[k] = dvex;
+                        if (Number(dist[dvex]) + Number(g.edge[dvex][k]) < Number(dist[k])) {
+                            dist[k] = Number(dist[dvex]) + Number(g.edge[dvex][k]);
+                            path[k] = Number(dvex);
                         }
                     }
                 }
