@@ -119,7 +119,7 @@ function Dijkstra(g, x) {
                 str = str + "<br> Total distance: " + dist[dvex] + "<br><br>";
                 descripe.innerHTML =
                     descripe.innerHTML +
-                    "<div class=slider_line><div class=slide_title>clause" +
+                    "<div class=slider_line><div class=slide_title>Step" +
                     index +
                     " time </div><div class=slide_content>" +
                     str +
@@ -208,7 +208,7 @@ function input() {
 function creatline() {
     var id1 = document.getElementById("first").value;
     var id2 = document.getElementById("second").value;
-    var dis = document.getElementById("weight").value;
+    var dis = Number(document.getElementById("weight").value);
     var div = document.getElementById("Wrap");
     if (id1.length === 2) {
         if (mgraph.edge[id1[1]][id2[1]] !== dis) {
